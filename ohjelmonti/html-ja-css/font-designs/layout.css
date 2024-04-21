@@ -1,0 +1,102 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: green;
+    border: 10px solid #033737;
+    color: #ffffff;
+    padding: 15px;
+    margin: 10px;
+}
+
+section {   
+    border: 10px solid #033737;
+    background-color: #033737;
+    color: #ffffff;
+    padding: 15px;
+    margin: 10px;
+}
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    h1{
+        color: #d2b48c;
+        font-size: 2.5rem;
+    }
+
+    h2{
+        color: #6bd151;
+        font-size: 2.5rem;
+    }
+
+    h3{
+        font-size: 2.5rem;
+    }
+
+    h4{
+        font-size: 2.2rem;
+    }
+
+    h5{
+        font-size: 1.9rem;
+    }
+
+    h6{
+        font-size: 1.6rem;
+    }
+
+    strong {
+       
+        font-weight: bold;
+        color: #3bd4d4;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    .marked {
+        background-color: #dcd61b;
+        color: black;
+    }
+
+   .small {
+        color: #db132a;
+        font-size: 0.7rem;
+
+    }
+
+    .overlined {
+        
+        text-decoration: line-through;
+    }
+
+    .underlined {
+       
+    text-decoration: underline;
+    }
+
+    .subscript {
+
+        vertical-align: sub;
+        font-size: 0.7rem;
+    }
+
+    .superscript {
+
+        vertical-align: super;
+        font-size: 0.7rem;
+
+    }
+
+/*
+Lihavointi: font-weight: bold 
+kursivointi: font-style: italic 
+yliviivaus: text-decoration: line-through 
+alleviivaus: text-decoration: underline
+subscript: vertical-align: sub (+ fonttikoon saãtö)
+superscript: vertical-align: super (+ fonttikoon säätö) */

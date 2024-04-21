@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    padding: 1rem;
+    background: lightsalmon;
+    color: darkmagenta;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.mobile {
+    background: lightsalmon;
+    color: darkmagenta;
+}
+
+.tablet {
+    background-color: blanchedalmond;
+    color: darkolivegreen;
+    display: none;
+}
+
+.desktop {
+    background: darkgoldenrod;
+    color: lemonchiffon;
+    display: none;
+}
+
+/*Tablet näkymän säännöt*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background: darkolivegreen;
+        color: blanchedalmond;
+    }
+
+    .tablet {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        background: lemonchiffon;
+        color: darkgoldenrod;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+    
+    .desktop {
+        display: block;
+    }
+}

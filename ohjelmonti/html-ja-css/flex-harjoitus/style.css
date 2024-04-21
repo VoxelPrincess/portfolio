@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkcyan;
+    padding: 10px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.wrapper > * {
+    padding: 10px; /* поля */
+    flex-grow: 1; /* разрешено расти */
+    flex-basis: 100%; /* базовый размер элемента по основной оси */
+}
+
+.header {
+    background-color: gold;
+}
+
+.navigation {
+    padding: 0;
+}
+
+.navigation ul {
+    display: flex;
+    background: lightgrey;
+}
+
+.navigation li {
+    flex-grow: 1;
+    flex-basis: auto;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+}
+
+.navigation a {
+    color: grey;
+}
+
+.main {
+    background-color: darkorange;
+    padding: 0;
+}
+
+.main p {
+    margin: 10px;
+}
+
+.media {
+    padding: 0;
+}
+
+.media ul {
+    display: flex;
+}
+
+.media li {
+    flex-grow: 1;
+    flex-basis: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.media a {
+    color: white;
+}
+
+.facebook {
+    background-color: #4B5496;
+}
+
+.twitter {
+    background-color: #6CA6EE;
+    
+}
+
+.gmail {
+    background-color: #767676;
+
+}
+
+.aside-1 {
+    background-color: mediumseagreen;
+}
+
+.aside-2 {
+    background-color: seagreen;
+}
+
+.footer {
+    background: lightgreen;
+}
+
+/*Tablet näkymän säännöt*/
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        flex-direction: row;
+    }
+    .aside-1 {
+        flex-basis: auto;
+    }
+    .aside-2 {
+        flex-basis: auto;
+    }
+}
+
+
+/*Desktop näkymän säännöt*/
+@media only screen and (min-width: 1024px) {
+    .aside-1 {
+        order: 1;
+        flex-basis: 0px;
+    }
+    .main {
+        order: 2;
+        flex-basis: 400px;
+    }
+    .aside-2 {
+        order: 3;
+        flex-basis: 0px;
+    }
+    .footer {
+        order: 4;
+    }
+}

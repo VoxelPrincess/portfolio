@@ -1,0 +1,82 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    background: skyblue;
+    font-family: "Mukta", "Oswald", sans-serif;
+}
+
+.one {
+    display: grid;
+    background: #b3b3b3;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px;
+    gap: 1rem; /* Отступы */
+}
+
+.item {
+    background: white;
+}
+
+.item:first-child {
+    background-color: green;
+    grid-column: 1 / span 4; /* Текстовый блок */
+}
+
+.item:nth-child(2) {
+    background: blue;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+}
+
+.item:last-child {
+    background: yellow;
+    grid-column: 1 / 5; /* почему 5? */
+}
+
+/* Harjoitus 2 */
+
+.two  {
+    max-width: 1000px;
+    margin: 50px auto;
+    gap: 0.4rem;
+    display: grid;
+    grid-template-areas: "top top top top top"
+        "left content content content right"
+        "bottom bottom bottom bottom bottom";
+}
+
+header {
+    grid-area: top;
+    background: green;
+    padding: 1rem;
+    min-height: 100px;
+}
+
+.left {
+    grid-area: left;
+    background: pink;
+    padding: 1rem;
+}
+
+main {
+    grid-area: content;
+    background-color: yellow;
+    padding: 1rem;
+}
+
+aside {
+    grid-area: right;
+    background-color: indianred;
+    padding: 1rem;
+}
+
+footer {
+    grid-area: bottom;
+    background: green;
+    padding: 1rem;
+    min-height: 100px;
+}
