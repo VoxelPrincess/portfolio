@@ -1,0 +1,131 @@
+#nelio {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  animation-name: nelio-animaatio;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes nelio-animaatio {
+  0% {
+    background-color: blue;
+  }
+  33% {
+    background-color: aqua;
+    width: 120px;
+    height: 120px;
+  }
+  67% {
+    background-color: azure;
+    width: 150px;
+    height: 150px;
+  }
+  100% {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+#ympyra {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+
+ympyra:hover {
+  animation-name: ympyra-animaatio;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+}
+
+@keyframes ympyra-animaatio {
+  0% {
+    border: 1px solid pink;
+  }
+  50% {
+    border: 3px solid pink;
+  }
+  100% {
+    border: 10px solid pink;
+  }
+}
+
+/*
+Tee neliö, joka 
+- siirtyy paikasta A paikasta B
+- vaihta tekstin väriä
+- vaihta taustan osittain läpinäkyväksi (opacity)
+
+Tee animoitu kuva (background-image)
+*/
+
+#nelio2 {
+  width: 200px;
+  height: 200px;
+  background-color: purple;
+  animation-name: nelio2-animaatio;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  margin-top: 30px;
+  animation-duration: 5s;
+  text-align: center;
+  font-size: 3rem;
+}
+
+nelio2:hover {
+}
+
+@keyframes nelio2-animaatio {
+  0% {
+    color: magenta;
+    opacity: 0%;
+    left: 10px;
+  }
+  25% {
+    color: green;
+    opacity: 50%;
+    left: 250px;
+  }
+  50% {
+    color: lightcoral;
+    opacity: 100%;
+    left: 500px;
+  }
+  75% {
+    color: lightskyblue;
+    opacity: 50%;
+    left: 250px;
+  }
+  100% {
+    color: magenta;
+    opacity: 0%;
+    left: 10px;
+  }
+}
+
+#kuva {
+  animation-name: kuvat;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+}
+
+@keyframes kuvat {
+  from {
+    background-image: url("kukka1.jpeg");
+  }
+  to {
+    background-image: url("kukka2.png");
+  }
+}
