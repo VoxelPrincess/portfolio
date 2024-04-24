@@ -36,9 +36,9 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   background-color: white;
-  margin: 0 auto;
-  margin: 1rem;
+  margin: 1rem auto;
   font-size: 1rem;
+  max-width: 70%;
 }
 
 h1,
@@ -83,6 +83,21 @@ nav {
   border: 1px solid #69013b;
   border-width: 0 1px;
   padding: 1rem;
+}
+
+#ops a {
+  color: black;
+  text-decoration: none;
+  font-style: italic;
+}
+
+#ops a:hover {
+  text-decoration: underline;
+  color: #69013b;
+}
+
+#ops .sisennys-4rem a {
+  font-style: normal;
 }
 
 .sisennys-1rem {
@@ -176,4 +191,11 @@ footer a:active {
   color: whitesmoke;
   font-weight: bold;
   padding: 1px 5px;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    max-width: 100%;
+    margin: 1rem;
+  }
 }

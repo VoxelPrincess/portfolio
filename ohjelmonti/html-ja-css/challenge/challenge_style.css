@@ -13,12 +13,19 @@ body {
 body {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  /* Use the animation defined below here */
+  animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
-  /* Define an animation where the background moves (background-position)
-  in order to show a different part of the gradient. */
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .first-task {
@@ -80,7 +87,7 @@ body {
   }
   100% {
     background-color: red;
-    transform: rotate(360deg);
+    transform: rotate(180deg);
   }
 }
 
@@ -224,6 +231,12 @@ of additional elements, so they become visible and form the borders.
   box-shadow: 0 0 5px #333;
 
   /* Add animation here */
+  animation-name: catch;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+  text-align: center;
 }
 
 .animated-circle:hover {
@@ -231,15 +244,29 @@ of additional elements, so they become visible and form the borders.
 }
 
 /* Define animation. Make sure start and end are the same. */
-@keyframes example {
+@keyframes catch {
   0% {
+    top: 0;
+    left: 0;
   }
   25% {
+    top: 0;
+    left: 300px;
+    background: green;
   }
   50% {
+    top: 300px;
+    left: 300px;
+    background: pink;
+    border-radius: 2px;
   }
   75% {
+    top: 300px;
+    left: 0;
+    background: yellow;
   }
   100% {
+    top: 0;
+    left: 0;
   }
 }
