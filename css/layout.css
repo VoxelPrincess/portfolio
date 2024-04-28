@@ -36,9 +36,9 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   background-color: white;
-  margin: 1rem auto;
+  margin: 0 auto;
   font-size: 1rem;
-  max-width: 70%;
+  max-width: 100%;
 }
 
 h1,
@@ -193,9 +193,18 @@ footer a:active {
   padding: 1px 5px;
 }
 
-@media screen and (max-width: 767px) {
+/*Tablet näkymän säännöt*/
+@media screen and (min-width: 768px) {
   body {
-    max-width: 100%;
-    margin: 1rem;
+    max-width: 70%;
+    margin: 1rem auto;
+  }
+}
+
+/*Desktop näkymän säännöt*/
+@media only screen and (min-width: 1024px) {
+  body {
+    max-width: 70%;
+    margin: 1rem auto;
   }
 }

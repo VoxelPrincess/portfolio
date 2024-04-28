@@ -1,5 +1,5 @@
 // Harjoitus 1: Määritä taulukon pituus ja ehto tarkistus
-let myAlphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+let myAlphabet = ["A", "B", "C", "D", "E", "F", "G"];
 /*
 Luo funktio nimeltä myAlphabetLength, joka kirjaa taulukon pituuden.
 Sisällytä myös if-lauseke tarkistaaksesi, onko taulukon pituus alle 5.
@@ -9,8 +9,14 @@ Odotettu tulos:
 */
 // Kirjoita funktiosi tähän
 
+if (myAlphabet >= 5) {
+  return;
+}
+
+console.log("Taulukon myAlphabet pituus:", myAlphabet.length);
+console.log("Taulukon myAlphabet pituus:", myAlphabet.length);
 // Harjoitus 2: Käy läpi taulukko ja kirjaa jokainen alkio sen indeksillä
-const planets = ['Merkurius', 'Venus', 'Maa', 'Mars', 'Jupiter'];
+const planets = ["Merkurius", "Venus", "Maa", "Mars", "Jupiter"];
 /*
 Kirjaa jokainen planeetta taulukossa yhdessä sen indeksin kanssa.
 Odotetut tulokset:
@@ -21,7 +27,7 @@ Odotetut tulokset:
 // Kirjoita koodisi tähän
 
 // Harjoitus 3: Kirjaa taulukon alkiot niiden tyyppeineen
-const wowDatatypes = [1, 'text', false, null, undefined];
+const wowDatatypes = [1, "text", false, null, undefined];
 /*
 Käy läpi taulukko, kirjaten jokaisen alkion, sen indeksin ja datatyypin.
 Odotetut tulokset:
@@ -33,7 +39,7 @@ Odotetut tulokset:
 // Kirjoita koodisi tähän
 
 // Harjoitus 4: Kirjaa taulukon alkiot ilman silmukkaa
-let myArr = [1, 2, 'One', true];
+let myArr = [1, 2, "One", true];
 /*
 Kirjaa jokainen alkio tässä taulukossa metodin avulla eli ilman silmukkaa.
 Odotetut tulokset: 1, 2, "One", true
@@ -41,8 +47,8 @@ Odotetut tulokset: 1, 2, "One", true
 // Kirjoita koodisi tähän
 
 // Harjoitus 5: Etsi yhteiset kurssit kahden opiskelijan välillä
-let student1Courses = ['Matematiikka', 'Englanti', 'Ohjelmointi'];
-let student2Courses = ['Maantieto', 'Espanja', 'Ohjelmointi'];
+let student1Courses = ["Matematiikka", "Englanti", "Ohjelmointi"];
+let student2Courses = ["Maantieto", "Espanja", "Ohjelmointi"];
 /*
 Tunnista ja kirjaa ylös kaikki kurssit, jotka ovat yhteisiä sekä student1Courses- että student2Courses-taulukossa.
 Odotettu tulos: "Yhteinen kurssi: Ohjelmointi"
@@ -50,7 +56,7 @@ Odotettu tulos: "Yhteinen kurssi: Ohjelmointi"
 // Kirjoita koodisi tähän
 
 // Harjoitus 6: Kirjaa jokainen taulukon alkion kirjain
-let furniture = ['Pöytä', 'Tuolit', 'Matto'];
+let furniture = ["Pöytä", "Tuolit", "Matto"];
 /*
 Kirjaa ylös jokainen kirjain furniture-taulukon jokaisesta alkioista.
 Odotetut tulokset:

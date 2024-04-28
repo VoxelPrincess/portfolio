@@ -17,7 +17,7 @@ const sekalainenTaulukko = [1, "a", true, null];
 
 ### Elementtien lisääminen/poistaminen
 
-#### .push() / .pop()
+#### .push() - shton element ne shigjete ne fund / .pop() -heq elementin e fundit nga fundi shigjetes
 
 Lisää tai poista elementtejä taulukon **lopusta**.
 
@@ -27,7 +27,7 @@ hedelmät.push("appelsiini"); // ['omena', 'banaani', 'appelsiini']
 hedelmät.pop(); // ['omena', 'banaani']
 ```
 
-#### .unshift() / .shift()
+#### .unshift() shton element ne fillim te vargut/ .shift() heq elementin e pare te vargut
 
 Lisää tai poista elementtejä taulukon **alusta**.
 
