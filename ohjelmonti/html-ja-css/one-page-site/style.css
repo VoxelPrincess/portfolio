@@ -1,0 +1,295 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0 3rem 3rem;
+    background: #333;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    margin: 0 0 3rem;
+    background: #080909;
+    padding: 3rem 2rem;
+}
+
+.nav {
+    display: flex;
+    gap: 5em;
+}
+
+.nav a {
+    color: #fff;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #D2681E;
+}
+
+.nav a:first-child {
+    margin-right: auto;
+}
+
+.wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.section-header {
+    font-size: 2.4rem;
+    color: #D2681E;
+    margin-bottom: 2.4rem;
+}
+
+.section-desc {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.section-img {
+    max-width: 300px;
+}
+
+.section-img.left {
+    float: left;
+    margin: 0 1rem 1rem 0;
+}
+
+.section-img.right {
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+hr {
+    clear: both;
+    background: none;
+    border: none;
+    margin: 3rem 0;
+    border-top: 1px solid #5b788a;
+    border-bottom: 1px solid #6590a3;
+}
+
+hr.last {
+    border-top-color: #737373;
+    border-bottom-color: #B5B5B5;
+}
+
+.portfolio {
+    padding: 4rem;
+    background: transparent url(https://source.unsplash.com/1600x900/?city,night) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.portfolio-inner {
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.portfolio-header {
+    font-size: 2.8rem;
+}
+
+.portfolio-desc {
+    color: #D2681E;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+}
+
+.portfolio-esimerkki {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.portfolio-esimerkki a {
+    color: #E0BC8E;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.portfolio-esimerkki a:hover {
+    text-decoration: underline;
+}
+
+.menneisyys {
+    background: #F5F5F5;
+    padding: 1.6rem;
+}
+
+.menneisyys-header {
+    color: #000;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1.2rem;
+}
+
+.card {
+    flex-basis: calc(100% / 3);
+    padding: 1rem;
+    color: #000;
+    border: 1px solid #C6C6C6;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+}
+
+.card-img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.card-header {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.card-desc {
+    margin-bottom: 1.2rem;
+}
+
+.card-more {
+    color: #E0BC8E;
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.card-more a:hover {
+    text-decoration: underline;
+}
+
+.yhteystiedot {
+
+}
+
+.yhteystiedot form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.yhteystiedot fieldset {
+    width: 80%;
+    border: none;
+}
+
+.yhteystiedot label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 1.6rem;
+    font-size: 1.4rem;
+}
+
+.yhteystiedot label span {
+    width: 20rem;
+    flex-grow: 0;
+    color: #fff;
+}
+
+.yhteystiedot input {
+    flex-grow: 1;
+    border: none;
+    background: #fff;
+    border-radius: 0.4rem;
+    padding: 0.4rem;
+}
+
+.yhteystiedot button[type="submit"] {
+    padding: 1rem;
+    color: #fff;
+    background: #D2681E;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.yhteystiedot button[type="submit"]:hover {
+    background: #E0BC8E;
+}
+
+.footer {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+@media (max-width: 425px) {
+    .header {
+        overflow: auto;
+    }
+
+    .nav a:last-child {
+        padding-right: 3rem;
+    }
+
+    .portfolio {
+        padding: 0;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        flex-basis: auto;
+    }
+
+    .section-img.left,
+    .section-img.right {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 1rem;
+        display: block;
+        float: none;
+    }
+
+    .yhteystiedot fieldset {
+        width: 100%;
+    }
+
+    .yhteystiedot label {
+        display: block;
+    }
+
+    .yhteystiedot label span {
+        width: 100%;
+        display: block;
+        margin-bottom: 0.4rem;
+    }
+
+    .yhteystiedot label input {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+    body {
+        padding: 0 0 3rem;
+    }
+
+    .wrapper {
+        max-width: 90%;
+    }
+
+    .nav {
+        gap: 3rem;
+    }
+}
